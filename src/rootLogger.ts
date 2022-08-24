@@ -15,6 +15,19 @@ function isAxiosError(error: Error | AxiosError): error is AxiosError {
   return (error as AxiosError)?.isAxiosError
 }
 
+/**
+ * The err serializer works for nested objects, thanks to this PR: https://github.com/pinojs/pino/pull/896
+ */
+const serializers = {
+  'err': (err: Error | AxiosError): SerializedError => {
+    if (isAxiosError(err)) {
+      delete err.config
+      // TODO: delete buffers and other keys that are not required
+    }
+    return pinoStdSerializers.err(err)
+  }
+}
+
 const rootLogger = pino({
   browser: {
     write: {
@@ -26,15 +39,7 @@ const rootLogger = pino({
       fatal: pipe(console.error, format),
     }
   },
-  serializers: {
-    'err': (err: Error | AxiosError): SerializedError => {
-      if (isAxiosError(err)) {
-        delete err.config
-        // TODO: delete buffers and other keys that are not required
-      }
-      return pinoStdSerializers.err(err)
-    }
-  }
+  serializers,
 })
 
 export default rootLogger
