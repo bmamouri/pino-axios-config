@@ -1,4 +1,4 @@
-import rootLogger from '../rootLogger'
+import rootLogger from '../src/rootLogger'
 
 (async function main() {
   try {

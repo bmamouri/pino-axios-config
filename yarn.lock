@@ -1288,11 +1288,6 @@ inherits@2:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-ino@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ino/-/ino-0.0.1.tgz#8cccc51b5005ca78497ee290e93774115f8665fc"
-  integrity sha512-qfZlBp3fTCfUOvxTnb97kchr7xqY2I7md4vj59fZyxXXiYYawoDfiib3hZ4Pu1r4WqkZqumfqAtaLYzwU8+kWw==
-
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -1930,11 +1925,6 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-p@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/p/-/p-0.2.0.tgz#46a8e8a63beca00ebf6638248621e8a09cb24a7b"
-  integrity sha512-+FO3CEcP1no7VLm9widissk+aKCXjdx3kH59TUe8rJdGttZ0wbIPGKwW81g3H7aoIoUcl+iUrhODM1zfYE9/Zg==
-
 parse-json@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-5.2.0.tgz#c76fc66dee54231c962b22bcc8a72cf2f99753cd"
@@ -1988,7 +1978,7 @@ pino-std-serializers@^6.0.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-6.0.0.tgz#4c20928a1bafca122fdc2a7a4a171ca1c5f9c526"
   integrity sha512-mMMOwSKrmyl+Y12Ri2xhH1lbzQxwwpuru9VjyJpgFIH4asSj88F2csdMwN6+M5g1Ll4rmsYghHLQJw81tgZ7LQ==
 
-pino@*:
+pino@*, pino@^8.4.2:
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/pino/-/pino-8.4.2.tgz#5de76e81b36e173d74244e0af4543e7ae241dbfd"
   integrity sha512-PlXDeGhJZfAuVay+wtlS02s5j8uisQveZExYdAm9MwwxUQSz9R7Q78XtjM2tTa4sa5KJmygimZjZxXXuHgV6ew==
